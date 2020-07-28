@@ -1,0 +1,65 @@
+
+.wholeHeight {
+    height: 100%;
+}
+
+.fixed-table-toolbar .pull-left {
+    width: 80%;
+}
+
+.treePanelWrapper {
+    padding-right: 0;
+    padding-left: 15px;
+}
+
+.infoPanelWrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.bootstrap-table .table > thead > tr > th {
+    vertical-align: middle;
+}
+
+/*.contentWrapper {*/
+    /*position: relative;*/
+/*}*/
+
+.graphWrapper {
+    padding: 25px 10px 10px;
+    height: 48%;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    /*position:absolute;*/
+    /*bottom: 20px;*/
+}
+
+.graphWrapper .graphic {
+    width: 48.5%;
+    margin-left:0.5%;
+    height: 100%;
+    padding-top: 24px;
+    display: inline-block;
+}
+
+.halfWrapper .graphic {
+    width: 98.5%;
+    margin-left: 1%;
+}
+
+.infoPanelWrapper .hdPanelBody {
+    height: calc(100% - 42px);
+    overflow-y: scroll;
+}
+
+@media screen and (max-height: 800px) {
+    .wholeHeight {
+        height: 99%;
+    }
+
+    input + div.scrollTree {
+        height: 92%;
+    }
+}
+

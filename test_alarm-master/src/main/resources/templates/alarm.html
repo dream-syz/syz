@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test报警管理</title>
+
+    <link rel="stylesheet" th:href="@{/css/jquery/jquery.mCustomScrollbar.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap/css/bootstrap.css}"/>
+    <link rel="stylesheet" th:href="@{/css/intro/introjs.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap-table/bootstrap-table.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap-select/bootstrap-select.css}"/>
+    <link rel="stylesheet" th:href="@{/css/datetimepicker/daterangepicker.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap-treeview/bootstrap-treeview.css}"/>
+    <link rel="stylesheet" th:href="@{/css/dist-picker/city-picker.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap-table-fixed-columns-master/bootstrap-table-fixed-columns.css}"/>
+    <link rel="stylesheet" th:href="@{/css/css/MeasurementPoint/table-meter-query.css}"/>
+
+    <script type="text/javascript" th:src="@{/js/jquery/jquery-3.3.1.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery/jquery.mCustomScrollbar.concat.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap/bootstrap.js}"></script>
+    <script type="text/javascript" th:src="@{/js/intro/intro.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-treeview/bootstrap-treeview.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-table/bootstrap-table.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-table/bootstrap-table-zh-CN.js}"></script>
+    <script type="text/javascript" th:src="@{/js/dist-picker/city-picker.data.js}"></script>
+    <script type="text/javascript" th:src="@{/js/dist-picker/city-picker.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-select/bootstrap-select.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-select/defaults-zh_CN.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/datetimepicker/moment.js}"></script>
+    <script type="text/javascript" th:src="@{/js/datetimepicker/daterangepicker.js}"></script>
+    <script type="text/javascript" th:src="@{/js/ContextJS/context.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-Export/bootstrap-table-export.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-Export/tableExport.js}"></script>
+    <script type="text/javascript" th:src="@{/js/dist-picker/main.js}"></script>
+
+    <!------------------------------------------------------------------------------------------------------------------>
+    <script type="text/javascript" th:src="@{/js/js/MeasurementPoint/hdst.treeview-query4.0.js}"></script>
+    <script type="text/javascript" th:src="@{/js/js/MeasurementPoint/hdst.table-query.js}"></script>
+    <script type="text/javascript" th:src="@{/js/js/MeasurementPoint/alarm.js}"></script>
+    <!-- 加载头部菜单-->
+    <script type="text/javascript" th:src="@{/js/js/MeasurementPoint/request-expired.js}"></script>
+    <script type="text/javascript" th:src="@{/js/js/MeasurementPoint/common.js}"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row" id="head-top-model">
+        <div class="col-md-12 col-xs-12" id="headMenu">
+            <nav class="navbar navbar-default" role="navigation" id="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header" id="headNav">
+                        <img th:src="@{img/innerLogo.png}" style="width:240px;height:50px;float:left;" id="innerLogo">
+                    </div>
+                    <div>
+                        <ul class="nav navbar-nav navbar-right" id="userMenu"
+                            style="margin-right: 10px; margin-top:8px;">
+                            <li class="dropdown">
+                                <button class="btn dropdown-toggle" id="dropdownMenu5" data-toggle="dropdown">
+                                    石一舟
+                                </button>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu5">
+                                    <li><a href="personalCenter" class="glyphicon glyphicon-user">
+                                           个人中心
+                                    </a></li>
+                                    <li><a href="hdst/logout"><i class="glyphicon glyphicon-off"></i>
+                                           退出系统
+                                    </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right" id="sysMenu"
+                            style="margin-right: 10px;margin-top:8px">
+                            <li class="dropdown">
+                                <button type="button" class="btn dropdown-toggle" id="dropdownMenu"
+                                        data-toggle="dropdown">
+                                    <font style="vertical-align: inherit;">
+                                        运营管理系统
+                                    </font><span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu 235648" role="menu" aria-labelledby="dropdownMenu">
+                                    <li><a href="assetManage">
+                                        <font style="vertical-align: inherit;">
+                                            仓库管理系统
+                                        </font>
+                                    </a></li>
+                                    <li><a href="meterWorkOrderManage">
+                                        <font style="vertical-align: inherit;">
+                                            表计工单管理系统
+                                        </font>
+                                    </a></li>
+                                    <li><a href="devManage">
+                                        <font style="vertical-align: inherit;">
+                                            设备管理系统
+                                        </font>
+                                    </a></li>
+                                    <li><a href="authorityManage">
+                                        <font style="vertical-align: inherit;">
+                                            用户管理系统
+                                        </font>
+                                    </a></li>
+                                    <li><a href="supplierManage">
+                                        <font style="vertical-align: inherit;">
+                                            供应商表计管理系统
+                                        </font>
+                                    </a></li>
+                                    <li><a href="mpManage">
+                                        <font style="vertical-align: inherit;">
+                                            表计管理系统
+                                        </font>
+                                    </a></li>
+                                    <li><a href="appManage">
+                                        <font style="vertical-align: inherit;">
+                                           手机端后台管理系统
+                                        </font>
+                                    </a></li>
+                                    <li><a href="workOrderManage">
+                                        <font style="vertical-align: inherit;">
+                                            工单管理系统
+                                        </font>
+                                    </a></li>
+                                    <li><a href="cusManage">
+                                        <font style="vertical-align: inherit;">
+                                            客户关系管理系统
+                                        </font>
+                                    </a></li>
+                                    <li><a href="/jdInfo">
+                                        <font style="vertical-align: inherit;">
+                                            检定管理
+                                        </font>
+                                    </a></li>
+                                    <li><a href="/bdInfo">
+                                        <font style="vertical-align: inherit;">
+                                           标定管理
+                                        </font>
+                                    </a></li>
+                                    <li><a href="appManageNew">
+                                        <font style="vertical-align: inherit;">
+                                            新手机端后台
+                                        </font>
+                                    </a></li>
+                                    <li><a href="supplierMetersNew">
+                                        <font style="vertical-align: inherit;">
+                                            新供应商表计管理
+                                        </font>
+                                    </a></li>
+                                    <li><a href="mpWorkOrderManage">
+                                        <font style="vertical-align: inherit;">
+                                            新表计工单系统
+                                        </font>
+                                    </a></li>
+                                    <li><a href="materialCode">
+                                        <font style="vertical-align: inherit;">
+                                            物料编码管理系统
+                                        </font>
+                                    </a></li>
+                                    <li><a href="reportIndex">
+                                        <font style="vertical-align: inherit;">
+                                            报表系统
+                                        </font>
+                                    </a></li>
+                                    <li><a href="/bpmninfo">
+                                        <font style="vertical-align: inherit;">
+                                            我的审批
+                                        </font>
+                                    </a></li>
+                                    <li><a href="msgPush">
+                                        <font style="vertical-align: inherit;">
+                                           消息推送
+                                        </font>
+                                    </a></li>
+                                    <li><a href="/jdBill">
+                                        <font style="vertical-align: inherit;">
+                                            检定收录单
+                                        </font>
+                                    </a></li>
+                                    <li><a href="safety">
+                                        <font style="vertical-align: inherit;">
+                                            安检管理系统
+                                        </font>
+                                    </a></li>
+                                    <li><a th:href="@{pipegrid}">
+                                        <font style="vertical-align: inherit;">
+                                            管网管理系统
+                                        </font>
+                                    </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right" id="funMenu"
+                            style="margin-right: 10px;margin-top:8px">
+                            <li class="dropdown">
+                                <button type="button" class="btn dropdown-toggle" id="dropdownMenu"
+                                        data-toggle="dropdown">
+                                    <font style="vertical-align: inherit;">
+                                        报警管理
+                                    </font><span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu 540841" role="menu" aria-labelledby="dropdownMenu">
+                                    <li><a href="runTimeTable">
+                                        <font style="vertical-align: inherit;">
+                                            实时信息
+                                        </font>
+                                    </a></li>
+                                    <li><a href="historicalReport">
+                                        <font style="vertical-align: inherit;">
+                                            历史明细
+                                        </font>
+                                    </a></li>
+                                    <li><a href="historyReport">
+                                        <font style="vertical-align: inherit;">
+                                           历史报表
+                                        </font>
+                                    </a></li>
+                                    <li><a href="toMeterCurve">
+                                        <font style="vertical-align: inherit;">
+                                            历史曲线
+                                        </font>
+                                    </a></li>
+                                    <li><a href="historicalCurve">
+                                        <font style="vertical-align: inherit;">
+                                            新历史曲线
+                                        </font>
+                                    </a></li>
+                                    <li><a href="historyReportNew">
+                                        <font style="vertical-align: inherit;">
+                                            新历史报表
+                                        </font>
+                                    </a></li>
+                                    <li><a href="runTimeTableNew">
+                                        <font style="vertical-align: inherit;">
+                                           新实时信息
+                                        </font>
+                                    </a></li>
+                                    <li><a href="historicalCurveNew">
+                                        <font style="vertical-align: inherit;">
+                                            历史曲线新
+                                        </font>
+                                    </a></li>
+                                    <li><a href="gasPlanPreview">
+                                        <font style="vertical-align: inherit;">
+                                           用气计划预览
+                                        </font>
+                                    </a></li>
+                                    <li><a href="opReportDownload">
+                                        <font style="vertical-align: inherit;">
+                                            报表下载
+                                        </font>
+                                    </a></li>
+                                    <li><a href="gasPlanReport">
+                                        <font style="vertical-align: inherit;">
+                                            用气计划报表
+                                        </font>
+                                    </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index">
+                                <font style="vertical-align: inherit;">
+                                    首页
+                                </font>
+                            </a></li>
+                        </ul>
+                        <p class="navbar-text navbar-right" id="sy_time" style="margin-right: 20px;">
+                             2020-07-06 09:00:02
+                        </p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2">
+            <div class="panel panel-primary" id="treepanel">
+                <div class="panel-heading">报警管理</div>
+                <div class="panel-body" id="treebody">
+                    <div id="sys-tree" class="trewview">
+                        <ul class="list-group">
+                            <li class="list-group-item node-sys-tree 840472" data-nodeid="0">
+                                <a th:href="@{/alarm_rule}">
+                                    <span class="icon glyphicon"></span><span class="icon node-icon"></span>报警规则
+                                    <span class="badge"></span>
+                                </a>
+                            </li>
+                            <li class="list-group-item node-sys-tree 122401 node-selected" data-nodeid="1">
+                                <a th:href="@{/alarm_history}">
+                                    <span class="icon glyphicon"></span>
+                                    <span class="icon node-icon"></span>报警信息
+                                    <span class="badge"></span>
+                                </a>
+                            </li>
+                            <li class="list-group-item node-sys-tree 512029" data-nodeid="2">
+                                <a th:href="@{/alarm_strategy}">
+                                    <span class="icon glyphicon"></span>
+                                    <span class="icon node-icon"></span>报警策略
+                                    <span class="badge"></span>
+                                </a>
+                            </li>
+                            <li class="list-group-item node-sys-tree 720303" data-nodeid="3">
+                                <a th:href="@{/alarm_report}">
+                                    <span class="icon glyphicon"></span>
+                                    <span class="icon node-icon"></span>报警报表
+                                    <span class="badge"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-10">
+            <div>
+                <iframe id="iframe-page-content" th:src="@{alarm_rule}" width="100%" frameborder="no" border="0"
+                        marginwidth="0" marginheight=" 0" scrolling="no" allowtransparency="yes"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+
+#mCSB_1_scrollbar_vertical {
+    /*display: none !important;*/
+}
+
+.select-time-hour-wrapper input {
+    width: 160px !important;
+}
+
+.select-time-day-wrapper input,.select-time-dayAndNight-wrapper input {
+    width: 100px !important;
+}
+
+.select-time-month-wrapper input {
+    width: 86px !important;
+}
+
+.select-time-year-wrapper input {
+    width: 66px !important;
+}
+
+.select-time-DValue-wrapper input {
+    width: 310px !important;
+}
+
+.select-time-range-wrapper input {
+    width: 310px !important;
+}
+
+/*.detail-view .fixed-table-toolbar {*/
+/*display:none!important;*/
+/*}*/
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+}
+
+/*操作查询栏的百分比分配*/
+.reportBtnGroup {
+    vertical-align: middle;
+    width: 31%;
+}
+
+.conditionForm {
+    margin-left: 4%;
+    width: 38%;
+}
+
+.modeSwitching {
+    width: 14%
+}
+
+.reportExport {
+    width: 10%
+}
+
+#chooseAndQuery {
+    background-color: orange;
+}
+
+#treeview {
+    padding-right: 8px
+}
+
+#treebody {
+    padding-right: 5px;
+    overflow: hidden;
+}
+
+#Metertreeview {
+    padding-right: 8px
+}
+
+#Meterbody {
+    padding-right: 5px;
+    overflow: hidden;
+}
+
+#treeview li {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#Metertreeview li {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 110px;
+}
+
+.queryCondition {
+    margin-top: 1.2%;
+    margin-left: 1%;
+}
+
+.tableContent {
+    margin-top: 2%;
+}
+
+.reportChoose {
+    margin-top: 1%;
+}
+
+.reportChoose > div {
+    padding: 10px 2px;
+}
+
+.time-select {
+    width: 24%;
+}
+
+#history_date {
+    width: 310px;
+}
+
+.table_list_box {
+    table-layout: fixed !important;
+}
+
+.timeForAdvancedOption {
+    color: #666;
+    margin: 0 40px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.d-inlineBlock {
+    display: inline-block !important;
+}
+
+#tableInfo > .bootstrap-table > .fixed-table-pagination {
+    position: absolute;
+    bottom: 30px;
+    width: 98%;
+}
+
+.panel-body {
+    height: 88%;
+}
+
+#tableInfo {
+    height: 90%;
+}
+
+#tableInfo > .bootstrap-table {
+    height: 98%;
+}
+
+.detail-view .fixed-table-toolbar{
+    display: none;
+}

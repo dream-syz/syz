@@ -1,0 +1,42 @@
+#typeInfoFrom {
+    margin-left: 5%;
+}
+
+.form-group-space {
+    width: 99.999999%;
+    margin-bottom: 10px !important;
+    /*margin-top: 10px !important;*/
+}
+
+.form-control-typeInfo {
+    float: right;
+    width: 60% !important;
+}
+
+#new_manage_info_characteristic_div {
+    display: none;
+}
+
+#new_big_classify_type_div {
+    display: none;
+}
+
+#new_small_classify_type_div {
+    display: none;
+}
+
+#type_code_div {
+    display: none;
+}
+
+#addConfigBtn {
+    display: none;
+}
+
+#deleteConfigBtn {
+    display: none;
+}
+
+#commitConfigBtn {
+    display: none;
+}

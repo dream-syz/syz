@@ -1,0 +1,16 @@
+.treePanelWrapper {
+    padding-right: 0;
+    padding-left: 15px;
+}
+
+.infoPanelWrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.alertWrapper{
+    position: absolute;
+    right: 16px;
+    bottom: 2px;
+    width: 490px;
+}

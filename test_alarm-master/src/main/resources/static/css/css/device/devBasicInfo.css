@@ -1,0 +1,26 @@
+body{
+    min-width: 830px;
+}
+
+#treeview2,label{
+    font-size: 16px;
+}
+
+.treeview{
+    padding-right: 18px
+}
+
+#tree2 .panel-body{
+    padding-right: 0px;height: 93%;overflow: hidden;
+}
+
+#treeview2 li{
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+#addModaldevVerisonNames li a{
+    cursor: pointer;
+}
+

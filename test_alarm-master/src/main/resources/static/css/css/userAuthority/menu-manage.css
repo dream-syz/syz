@@ -1,0 +1,54 @@
+
+#detailsForMenu {
+    position: relative;
+}
+
+#detailsForMenu .panel-foot {
+    position: absolute;
+    right: 20px;
+    bottom: 14px;
+}
+
+.menuManage .panel {
+    vertical-align: top;
+}
+
+.menuManage #postTreePanel {
+    width: 20%;
+}
+
+.menuManage #detailsForMenu {
+    width: 25%;
+    margin-left:0.8%;
+}
+
+.menuManage #btnDetails {
+    width: 53%;
+    margin-left:0.7%;
+}
+
+/*不明理由的不生效*/
+/*@media screen and (min-width: 1200px)and (max-width: 1399px) {*/
+    /**{*/
+        /*color:red;*/
+    /*}*/
+
+    /*.menuManage #postTreePanel {*/
+        /*width: 23%;*/
+    /*}*/
+
+    /*.menuManage #detailsForMenu {*/
+        /*width: 29%;*/
+    /*}*/
+
+    /*.menuManage #btnDetails {*/
+        /*width: 56%;*/
+    /*}*/
+/*}*/
+
+
+/*@media screen and (min-width: 1200px)and (max-width: 1399px) {*/
+    /**{*/
+        /*font-size:10px;*/
+    /*}*/
+/*}*/

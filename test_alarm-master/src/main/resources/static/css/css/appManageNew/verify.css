@@ -1,0 +1,13 @@
+.fixed-table-toolbar .bs-bars{
+    margin-top:0;
+    line-height: 28px;
+}
+
+#toolbar > #formSearch {
+    float: left;
+    margin-left: 0;
+}
+
+#select-day {
+    width: 104px;
+}

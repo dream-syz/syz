@@ -1,0 +1,84 @@
+@font-face{
+    　　font-family: "titleFont";
+    　　src: url('/fonts/FZDHTJW.ttf');
+}
+
+#logo {
+    font-family: titleFont;
+    font-weight:900;
+}
+
+#checkbox span {
+    /*font-size:16px;*/
+    margin-left: 14px;
+}
+
+#formSearch {
+    font-size: 16px;
+}
+
+#checkbox label {
+    width: 100px;
+    height: 30px;
+}
+
+label {
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-horizontal .form-group {
+    margin-right: 10px;
+    margin-left: -28px;
+}
+
+#formSearch label {
+    padding-top: 8px;
+}
+
+#downloadReport {
+    border: 1px solid #337ab7;
+    color: #337ab7;
+    margin-left: 2%;
+}
+
+#downloadReport .glyphicon {
+    font-size: 12px;
+}
+
+#downloadReport:hover {
+    background-color: #337ab7;
+    color: #fff;
+}
+
+#assets-echarts {
+    display: none;
+}
+
+#assets-echarts div {
+    display: inline-block;
+}
+
+.button-toggle {
+    margin: 20px 0px;
+    height: 42px;
+}
+
+#reportOperate iframe {
+    display: none;
+}
+
+.wrapper {
+    display: block;
+    background-color: red;
+    width:90%;
+    height:90%;
+}
+
+.wrapper div {
+    display: inline-block;
+    background-color: blue;
+}

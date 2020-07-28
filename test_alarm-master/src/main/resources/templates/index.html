@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>报警管理系统首页</title>
+
+    <script src="js/common/systemCommonCss.js"></script>
+    <script src="js/common/systemCommonQuote.js"></script>
+
+    <script src="index.js"></script>
+
+</head>
+
+<body onload="time()">
+<!-- 公共头部信息 -->
+<div class="row" id="head-top-model">
+    <div class="col-md-12 col-xs-12" id="headMenu">
+        <nav class="navbar navbar-default" role="navigation" id="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header" id="headNav">
+                    <img src="img/innerLogo.png" style="width:240px;height:50px;float:left;" id="innerLogo">
+                </div>
+                <div>
+                    <ul class="nav navbar-nav navbar-right" id="userMenu"
+                        style="margin-right: 10px; margin-top:8px;">
+                        <li class="dropdown">
+                            <button class="btn dropdown-toggle" id="dropdownMenu5" data-toggle="dropdown">
+                                石一舟
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right" id="sysMenu" style="margin-right: 10px;margin-top:8px">
+                        <li class="dropdown">
+                            <button type="button" class="btn dropdown-toggle" id="dropdownMenu"
+                                    data-toggle="dropdown">
+                                <font style="vertical-align: inherit;">
+                                    运营管理系统
+                                </font><span class="caret"></span>
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right" id="funMenu" style="margin-right: 10px;margin-top:8px">
+                        <li class="dropdown">
+                            <button type="button" class="btn dropdown-toggle" id="dropdownMenu"
+                                    data-toggle="dropdown">
+                                <font style="vertical-align: inherit;">
+                                    报警管理
+                                </font><span class="caret"></span>
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <font style="vertical-align: inherit;">
+                                首页
+                            </font>
+                        </li>
+                    </ul>
+                    <p class="navbar-text navbar-right" id="sy_time" style="margin-right: 20px;">
+                        2020-07-06 09:00:02
+                    </p>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- 左边菜单栏列表 -->
+<div class="treePanelWrapper col-lg-2 col-md-3 col-sm-12 col-xs-12 wholeHeight" id="treeWrapper">
+    <div class="panel panel-primary wholeHeight">
+        <div class="panel-heading">报警管理</div>
+        <div id="sys-tree" class="trewview">
+            <ul class="list-group">
+                <li class="list-group-item node-sys-tree " data-nodeid="0">
+                    <span class="icon glyphicon"></span>
+                    <span class="icon node-icon"></span>报警规则
+                    <span class="badge"></span>
+                </li>
+                <li class="list-group-item node-sys-tree" data-nodeid="1">
+                    <span class="icon glyphicon"></span>
+                    <span class="icon node-icon"></span>报警信息
+                    <span class="badge"></span>
+                </li>
+                <li class="list-group-item node-sys-tree " data-nodeid="2">
+                    <span class="icon glyphicon"></span>
+                    <span class="icon node-icon"></span>报警策略
+                    <span class="badge"></span>
+                </li>
+                <li class="list-group-item node-sys-tree " data-nodeid="3">
+                    <span class="icon glyphicon"></span>
+                    <span class="icon node-icon"></span>报警报表
+                    <span class="badge"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 右边通过窗口引入面板 -->
+<div class="infoPanelWrapper col-lg-10 col-md-9 col-sm-12 col-xs-12 wholeHeight" id="runTimePanel">
+    <iframe id="iframe-page-content" src="alarm_rule" width="100%" height="920px"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.col-md-3 {
+    width: 29%;
+}
+
+.col-md-8 {
+    width:68%;
+}
+
+#areaTreeWrapper {
+    overflow: auto;
+}
+
+#addAreaPanel {
+    margin-left: 10px;
+    position: relative;
+}
+
+#addAreaPanel .panel-foot {
+    position: absolute;
+    left: 496px;
+    top: 580px;
+}
+
+/*#areaTreePanel, #addAreaPanel {*/
+    /*padding: 0;*/
+/*}*/
+

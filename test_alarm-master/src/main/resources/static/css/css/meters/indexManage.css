@@ -1,0 +1,200 @@
+#tableInfo {
+    /*background-color: #76bab9;*/
+}
+
+/*操作查询栏的百分比分配*/
+.operate-button-box {
+    width: 20%;
+}
+
+.conditionForm {
+    width: 76%;
+}
+
+#custom-menu {
+    list-style: none;
+    padding: 0px;
+    background-color: #fff;
+    width: 125px;
+    height: 175px;
+    box-shadow: 0 1px 1px #888, 1px 0 1px #ccc;
+    position: absolute; /*自定义菜单相对与body元素进行定位*/
+}
+
+#custom-menu-wrapper {
+    display:none;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*background: #000;*/
+}
+
+.menu-item {
+    width: 125px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    /*border: solid 1px darkgrey;*/
+}
+
+.f-gray {
+    color:#ccc;
+}
+
+#opening, #changeMeters, #maintain {
+    border-bottom: solid 1px #ccc;
+}
+
+#custom-menu li:hover {
+    background: #E6EDF6;
+    border: 1px solid #B4D2F6;
+}
+
+#openingModal .modal-body .modalAddress .form-control {
+    width: 26%;
+}
+
+/*表计详情部分*/
+#meterDetailsModal .imageBrowse .image-list-item {
+    width: 80px;
+    height: 80px;
+    margin: 0.75rem 0 0.75rem 3rem;
+    /*background-color: #b5d56d;*/
+    border-radius: 5px;
+}
+
+#meterDetailsModal .fileBrowse .file-list-item {
+    width: 204px;
+    height: 40px;
+    margin: 0.75rem 0 0.75rem 3rem;
+    background-color: #b5d56d;
+}
+
+#meterDetailsModal img {
+    width: 30px;
+    height: 30px;
+    margin: 5px 14px;
+    background-color: #c12e2a;
+}
+
+#meterDetailsModal .left {
+    float: left;
+}
+
+#meterDetailsModal .right {
+    float: right;
+}
+
+#meterDetailsModal .clear {
+    clear: both;
+}
+
+/*手写动态无名称开关*/
+.chooseBtn {
+    display: none;
+}
+
+.choose-label {
+    box-shadow: #ccc 0 0 0 1px;
+    width: 40px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    position: relative;
+    background-color: #bdbdbd;
+    overflow: hidden;
+}
+
+.choose-label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #fff;
+    z-index: 20;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.chooseBtn:checked + label.choose-label:before {
+    left: 20px;
+}
+
+.chooseBtn:checked + label.choose-label {
+    /*background-color: #51ccee;*/
+}
+
+.modalInfoCard {
+    /*border: 1px solid red;*/
+}
+
+/*手写带名称的开关*/
+#stateSwitch-repairOne, #stateSwitch-testOne {
+    display: none;
+}
+
+.button-label {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    background-color: #ccc;
+    box-shadow: #ccc 0px 0px 0px 2px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 1%;
+    background-color: #fff;
+}
+
+.button-label .text {
+    line-height: 30px;
+    font-size: 18px;
+    text-shadow: 0 0 1px #ddd;
+}
+
+.on {
+    color: #fff;
+    display: none;
+    text-indent: 10px;
+}
+
+.off {
+    color: #fff;
+    display: inline-block;
+    text-indent: 34px;
+}
+
+.button-label .circle {
+    left: 0;
+    transition: all 0.3s;
+}
+
+#stateSwitch-repairOne:checked + label.button-label .circle {
+    left: 50px;
+}
+
+#stateSwitch-repairOne:checked + label.button-label .on {
+    display: inline-block;
+}
+
+#stateSwitch-repairOne:checked + label.button-label .off {
+    display: none;
+}
+
+#stateSwitch-repairOne:checked + label.button-label {
+    /*background-color: green;*/
+}

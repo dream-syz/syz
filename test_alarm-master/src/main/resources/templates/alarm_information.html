@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>报警信息管理</title>
+
+    <script src="js/common/systemCommonCss.js"></script>
+    <script src="js/common/systemCommonQuote.js"></script>
+
+    <link href="runTimeTable.css" rel="stylesheet">
+    <script src="myAlarmInformation.js"></script>
+    <script src="myAlarmInformationBiz.js"></script>
+</head>
+
+<body>
+    <div class="panel panel-primary wholeHeight">
+        <div class="panel-heading">
+            报警信息
+        </div>
+        <div class="panel-body hdPanelBody" id="infoPanelBody">
+            <div class="contentWrapper wholeHeight">
+                <div id="infoToolbar" class="toolbar"></div>
+                <form id="formSearch_alarmRule" class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-sm-1" for="fault_name">规则名称</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" id="fault_name" placeholder="请输入策略名称(精准查询)" />
+                        </div>
+
+                        <div class="col-sm-1" style="text-align:left;">
+                            <button type="button" id="btn_alarm_query" class="btn btn-primary"
+                                onclick="queryAlarmInfo()">查询
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <table id="liveDataTable" class="table" data-toolbar="#infoToolbar"></table>
+            </div>
+        </div>
+    </div>
+</body>

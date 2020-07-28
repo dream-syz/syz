@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test报警信息</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap/css/bootstrap.css}" />
+    <link rel="stylesheet" th:href="@{/css/intro/introjs.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap-table/bootstrap-table.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap-select/bootstrap-select.css}"/>
+    <link rel="stylesheet" th:href="@{/css/datetimepicker/daterangepicker.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap-treeview/bootstrap-treeview.css}"/>
+    <link rel="stylesheet" th:href="@{/css/jquery/jquery.mCustomScrollbar.css}"/>
+    <link rel="stylesheet" th:href="@{/css/dist-picker/city-picker.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap-table-fixed-columns-master/bootstrap-table-fixed-columns.css}"/>
+    <link rel="stylesheet" th:href="@{/css/css/MeasurementPoint/table-meter-query.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap-popover/bootstrap-popover-x.css}"/>
+
+    <script type="text/javascript" th:src="@{/js/jquery/jquery-3.3.1.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap/bootstrap.js}"></script>
+    <script type="text/javascript" th:src="@{/js/intro/intro.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-treeview/bootstrap-treeview(2).js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-table/bootstrap-table.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-table/bootstrap-table-zh-CN.js}"></script>
+    <script type="text/javascript" th:src="@{/js/dist-picker/city-picker.data.js}"></script>
+    <script type="text/javascript" th:src="@{/js/dist-picker/city-picker.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-select/bootstrap-select.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-select/defaults-zh_CN.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/datetimepicker/moment.js}"></script>
+    <script type="text/javascript" th:src="@{/js/datetimepicker/daterangepicker.js}"></script>
+    <script type="text/javascript" th:src="@{/js/ContextJS/context.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-Export/bootstrap-table-export.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-Export/tableExport.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery/jquery.mCustomScrollbar.concat.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/dist-picker/main.js}"></script>
+    <script type="text/javascript" th:src="@{/js/js/MeasurementPoint/request-expired.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-popover/bootstrap-popover-x.js}"></script>
+
+    <!-------------------------------------------------------------------------------->
+    <link rel="stylesheet" th:href="@{/css/css/MeasurementPoint/modelExtend.css}" />
+
+    <script type="text/javascript" th:src="@{/js/js/MeasurementPoint/hdst.treeview-query.js}"></script>
+    <script type="text/javascript" th:src="@{/js/js/MeasurementPoint/hdst.table-query.js}"></script>
+    <script type="text/javascript" th:src="@{/js/js/MeasurementPoint/create-rule.js}"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="modal fade model-e-center" id="cre-rule-div" tabindex="-1" role="dialog"
+                aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document" id="cre-rule-div-cont">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">创建报警规则</h4>
+                        </div>
+                        <div class="modal-body " style="height:500px; overflow:auto;">
+                            <!--设置报警规则-->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="panel ">
+                                        <div class="panel-heading">
+                                            <h2>1<small>关联资源</small></h2>
+                                        </div>
+
+                                        <div class="panel-body">
+                                            <form class="form-horizontal">
+                                                <div class="row">
+                                                    <div class="form-group col-lg-4">
+                                                        <label class="col-lg-4 control-label">设备类型：</label>
+                                                        <div class="col-lg-8">
+                                                            <select class="form-control" id="product_select">
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="panel ">
+                                        <div class="panel-heading">
+                                            <h2>2<small>设置报警规则</small></h2>
+                                        </div>
+                                        <div class="panel-body">
+                                            <form class="form-horizontal">
+                                                <!--报警类型-->
+                                                <div class="row">
+                                                    <div class="form-group col-lg-4">
+                                                        <label class="col-lg-4 control-label">报警类型：</label>
+                                                        <div class="col-lg-8">
+                                                            <div class="btn btn-info btn-sm">阈值报警</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="row">
+                                                        <!--规则名称-->
+                                                        <div class="form-group col-lg-4">
+                                                            <label class="col-lg-4 control-label">规则名称：</label>
+                                                            <div class="col-lg-8">
+                                                                <input class="form-control" id="strategyName_input">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <!--规则描述-->
+                                                        <div class="form-group">
+                                                            <div class="col-lg-4 " style="padding: 0px">
+                                                                <label class="col-lg-4 control-label">规则描述：</label>
+                                                                <div class="col-lg-8">
+                                                                    <select class="form-control" id="rule_select">
+
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 " style="padding: 0px">
+                                                                <div class="col-lg-4 " style="padding-left: 0px">
+                                                                    <select class="form-control"
+                                                                        name="description_input">
+                                                                        <option name="1">1次</option>
+                                                                        <option name="2">2次</option>
+                                                                        <option name="3">3次</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-lg-4" style="padding-left: 0px">
+                                                                    <select class="form-control"
+                                                                        name="description_input">
+                                                                        <option name="&ge;">&ge;</option>
+                                                                        <option name="&gt;">&gt;</option>
+                                                                        <option name="&le;">&le;</option>
+                                                                        <option name="&lt;">&lt;</option>
+                                                                        <option name="=">=</option>
+                                                                        <option name="!=">!=</option>
+                                                                        <option name="between">between</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-lg-4" style="padding-left: 0px">
+                                                                    <input class="form-control"
+                                                                        name="description_input">
+                                                                </div>
+                                                            </div>
+                                                            <label class=" control-label">分钟</label>
+                                                        </div>
+                                                        <div class="row">
+                                                            <!--添加设备型号-->
+                                                            <div class="form-group col-lg-4">
+                                                                <label class="col-lg-4 control-label">添加设备型号：</label>
+                                                                <div class="col-lg-8">
+                                                                    <div class="col-lg-6">
+                                                                        <input type="radio" name="isHasVersion" name="1"
+                                                                            id="devVersionRadio"
+                                                                            onclick="createRule.showDevVersion()" />是&nbsp;
+                                                                        <input type="radio" name="isHasVersion" name="0"
+                                                                            checked="checked"
+                                                                            onclick="createRule.hideDevVersion()" />否
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-lg-4">
+                                                                <select class="form-control" id="devVersion_select">
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row">
+                                                            <!--添加设备-->
+                                                            <div class="form-group col-lg-4">
+                                                                <label class="col-lg-4 control-label">添加设备：</label>
+                                                                <div class="col-lg-8">
+                                                                    <div class="col-lg-6">
+                                                                        <input type="radio" name="isHasMp" name="1"
+                                                                            onclick="createRule.showMp()" />是&nbsp;
+                                                                        <input type="radio" name="isHasMp" name="0"
+                                                                            checked="checked"
+                                                                            onclick="createRule.hideMp()" />否
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-lg-4">
+                                                                <select class="form-control" id="mp_select">
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-8">
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div id="addRule"></div>
+
+                                                <!--添加报警规则-->
+                                                <div class="row">
+                                                    <div class="form-group col-lg-4">
+                                                        <label class="col-lg-4 control-label"></label>
+                                                        <a class="glyphicon glyphicon-plus "
+                                                            onclick="createRule.addRuleDiv()">
+                                                            <span>添加报警规则</span></a>
+                                                    </div>
+                                                </div>
+
+                                                <!--报警类型-->
+                                                <div class="row">
+                                                    <div class="form-group col-lg-4">
+                                                        <label class="col-lg-4 control-label">通道沉默时间：</label>
+                                                        <div class="col-lg-8">
+                                                            <select class="form-control" id="deadTime_select">
+                                                                <option name="5">5分钟</option>
+                                                                <option name="30">30分钟</option>
+                                                                <option name="60">1小时</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <span href="#" name="showSleepTip" rel="popover"
+                                                            class="glyphicon glyphicon-question-sign"
+                                                            style="padding-top: 7px;"
+                                                            data-content="指报警发生后如果未恢复正常，间隔多久重复发送一次报警通知。"
+                                                            data-original-title="提示"></span>
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="panel ">
+                                        <div class="panel-heading">
+                                            <h2>3
+                                                <small>通知方式</small>
+                                            </h2>
+                                        </div>
+                                        <div class="panel-body">
+                                            <form class="form-horizontal">
+                                                <!--通知对象-->
+                                                <div class="row">
+                                                    <div class="form-group col-lg-4">
+                                                        <label class="col-lg-4 control-label">通知对象：</label>
+                                                        <div class="col-lg-8">
+
+                                                            <div class="col-lg-8" style="padding-left: 0px">
+                                                                <select class="form-control " id="notice_select">
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-lg-4" style="padding-left: 0px">
+                                                                <button class="btn btn-primary">创建联系人</button>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <!--通知方式-->
+                                                    <div class="form-group col-lg-4">
+                                                        <label class="col-lg-4 control-label">通知方式：</label>
+                                                        <div class="col-lg-8">
+                                                            <select class="form-control" id="noticeType_select">
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--内容备注-->
+                                                    <div class="form-group col-lg-4">
+                                                        <label class="col-lg-4 control-label">内容备注：</label>
+                                                        <div class="col-lg-8">
+                                                            <textarea class="form-control"
+                                                                id="context_input"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--通知方式-->
+                            <div class="row">
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                            <button type="button" class="btn btn-primary" id="createRule_submit">确定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

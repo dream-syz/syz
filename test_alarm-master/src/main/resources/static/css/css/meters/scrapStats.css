@@ -1,0 +1,28 @@
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    /*background-color: #eea3bc;*/
+}
+.flex-item {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    /*background-color: #b8daff;*/
+}
+
+.graphic-flex-item {
+    flex: 0 0 45%;
+}
+
+.graphic-module {
+    /*background-color: #b8daff;*/
+}
+
+.graphic-module .flex-item {
+    /*background-color: #c12e2a;*/
+}

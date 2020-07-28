@@ -1,0 +1,97 @@
+#checkbox {
+    margin-top: 6px;
+    margin-left: 20px;
+}
+
+#checkbox span {
+    font-size: 15px;
+    margin-left: 14px;
+}
+
+#checkbox label {
+    width: 108px;
+    height: 30px;
+}
+
+.reportOperate {
+    padding-top: 10px;
+}
+
+@media screen and (min-width: 1400px)and (max-width: 1679px) {
+    #queryConditions {
+        padding-top: 10px;
+    }
+
+    #checkbox {
+        margin-top: 8px;
+    }
+
+    #checkbox span {
+        font-size: 13px;
+    }
+
+    #checkbox label {
+        width: 90px;
+    }
+
+    .col-lg-1 {
+        width: 9.4%;
+    }
+
+    .col-lg-11 {
+        width: 80%;
+    }
+}
+
+/*
+    1200 <= x <= 1399
+ */
+@media screen and (min-width: 1200px)and (max-width: 1399px) {
+    #checkbox label {
+        width: 98px;
+    }
+
+    .col-lg-1 {
+        width: 11.4%;
+    }
+
+    .col-lg-8 {
+        width: 72%;
+    }
+}
+
+/*
+    x <= 1199
+ */
+@media screen and (max-width: 1199px) {
+    #checkbox {
+        margin-left: 0px;
+    }
+
+    #checkbox label {
+        width: 64px;
+    }
+
+        .list-group-item {
+            padding: 10px 2px;
+        }
+    .col-md-3 {
+        width: 23.9%;
+    }
+
+    .col-md-9 {
+        width: 76.1%;
+    }
+
+    .col-lg-8 {
+        width: 68%;
+    }
+
+    .col-md-10 {
+        width: 79%;
+    }
+
+    #btn_query {
+        margin-left: 0px;
+    }
+}

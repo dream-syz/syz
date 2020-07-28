@@ -1,0 +1,52 @@
+.treePanelWrapper {
+    padding-right: 0;
+    padding-left: 15px;
+}
+
+.infoPanelWrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.graphWrapper {
+    padding: 25px 10px 10px;
+    height: 56%;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    /*position:absolute;*/
+    /*bottom: 20px;*/
+}
+
+.graphWrapper .graphic {
+    width: 48.5%;
+    margin-left:0.5%;
+    height: 100%;
+    padding-top: 24px;
+    display: inline-block;
+}
+
+.halfWrapper .graphic {
+    width: 98.5%;
+    margin-left: 1%;
+}
+
+.infoPanelWrapper .hdPanelBody {
+    height: calc(100% - 42px);
+    overflow-y: scroll;
+}
+
+.bootstrap-table .fixed-table-pagination {
+    margin-top: 45px;
+}
+
+.fixed-table-footer .table tbody tr {
+    border: 1px solid #ccc;
+    border-top: 0px;
+}
+
+.fixed-table-footer .table tbody tr td{
+    font-weight: 600;
+}
+

@@ -1,0 +1,149 @@
+#formSearch {
+    margin: 16px 0px;
+}
+
+#formSearch label {
+    line-height: 34px;
+}
+
+#treebody {
+    overflow: auto;
+}
+
+.lifeCycleStatusWrapper {
+    width: 28%;
+}
+
+#formSearch button {
+    height: 34px;
+}
+
+@media screen and (min-width: 1400px)and (max-width: 1679px) {
+
+    .deviceNameWrapper {
+        width: 37%;
+    }
+
+    .deviceName {
+        width: 26%;
+    }
+
+    .deviceNameInput {
+        width: 74%;
+    }
+
+    .lifeCycleStatusWrapper {
+        width: 23%;
+    }
+
+    .lifeCycleStatusLabel {
+        width: 54%;
+    }
+
+    .lifeCycleStatusSelect {
+        width: 46%;
+    }
+
+    .selectTimeWrapper {
+        width: 30%;
+    }
+
+    .selectTimeLabel {
+        width: 33%;
+    }
+
+    .selectTime {
+        widht: 67%;
+    }
+}
+
+@media screen and (min-width: 1200px)and (max-width: 1399px) {
+    .form-control {
+        font-size: 10px;
+    }
+
+    .queryButton {
+        width: 10%;
+        padding-top: 38px;
+    }
+
+    .deviceNameWrapper {
+        width: 38%;
+    }
+
+    .deviceName {
+        width: 80%;
+    }
+
+    .deviceNameInput {
+        width: 100%;
+    }
+
+    .lifeCycleStatusWrapper {
+        width: 16%;
+    }
+
+    .lifeCycleStatusLabel {
+        width: 100%;
+    }
+
+    .lifeCycleStatusSelect {
+        width: 100%;
+    }
+
+    .selectTimeLabel {
+        width: 100%;
+    }
+
+    .selectTime {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px)and (max-width: 1199px) {
+    .form-control {
+        font-size: 10px;
+    }
+
+    .queryButton {
+        width: 10%;
+        padding-top: 38px;
+    }
+
+    .deviceNameWrapper {
+        width: 38%;
+    }
+
+    .deviceName {
+        width: 100%;
+    }
+
+    .deviceNameInput {
+        width: 100%;
+    }
+
+    .lifeCycleStatusLabel {
+        width: 100%;
+    }
+
+    .lifeCycleStatusSelect {
+        width: 100%;
+    }
+
+    .lifeCycleStatusWrapper {
+        width: 20%;
+    }
+
+    .selectTimeWrapper {
+        width: 26%;
+    }
+
+    .selectTimeLabel {
+        width: 100%;
+    }
+
+    .selectTime {
+        width: 100%;
+    }
+}
+

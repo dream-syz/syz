@@ -1,0 +1,42 @@
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*background-color: #eea3bc;*/
+}
+.flex-item {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    /*background-color: #b8daff;*/
+}
+
+.card-flex-item {
+    flex: 0 0 25%;
+}
+
+.graphic-flex-item {
+    flex: 0 0 48%;
+}
+
+.card{
+    border: 1px solid #999;
+    margin-bottom: 1.5rem;
+    /*background-color: #2aba20;*/
+}
+
+.card-body {
+    padding:1rem 4rem;
+    /*background-color: #eea3bc;*/
+}
+
+.graphic-module {
+    /*background-color: #b8daff;*/
+}
+
+.graphic-module .flex-item {
+    /*background-color: #c12e2a;*/
+}

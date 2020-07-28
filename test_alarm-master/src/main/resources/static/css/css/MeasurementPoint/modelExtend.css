@@ -1,0 +1,28 @@
+/*设置模态框的位置*/
+.model-e-center{
+
+    top: 20%;
+
+}
+
+.row-margin-top {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.width-all{
+    width: 100%;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.none-padding {
+    padding: 0 !important;
+}

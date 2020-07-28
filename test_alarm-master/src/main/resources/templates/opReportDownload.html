@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>报表下载</title>
+    <!--<script src="/js/js/common/systemCommonCss.js"></script>-->
+    <link rel="stylesheet" th:href="@{/css/css/MeasurementPoint/opReportDownload.css}">
+    <link rel="stylesheet" th:href="@{/css/css/common/outLookTree.css}">
+
+    <script type="text/javascript" th:src="@{/js/js/common/systemCommonQuote.js}"></script>
+    <script type="text/javascript" th:src="@{/js/js/MeasurementPoint/opReportDownloadBus.js}"></script>
+</head>
+<body>
+<div class="page-Content container-fluid outermostLayer">
+    <div class="row" id="menuBar">
+        <menubar func="opReportDownload" module="operationManage"></menubar>
+    </div>
+    <div class="row panelWrapper contentOuterWrapper">
+        <div class="treePanelWrapper col-lg-2 col-md-3 wholeHeight" id="treeWrapper">
+            <div class="panel panel-primary wholeHeight">
+                <div class="panel-heading">
+                    区域信息
+                    <i class="glyphicon glyphicon-chevron-left" id="flexibleIcon_in" style="float: right;"
+                       title="点击收起区域信息树"></i>&nbsp;&nbsp;
+                </div>
+                <div class="panel-body hdPanelBody">
+                    <div class="scrollTree ztree" id="areaTree"></div>
+                </div>
+            </div>
+        </div>
+        <div class="infoPanelWrapper col-lg-10 col-md-9 wholeHeight" id="reportPanel">
+            <div class="panel panel-primary wholeHeight">
+                <div class="panel-heading">
+                    <i class="glyphicon glyphicon-chevron-right hide" id="flexibleIcon_out" style="float: left;"
+                       title="点击展开区域信息树"></i>&nbsp;&nbsp;
+                    定制报表下载
+                </div>
+                <div class="panel-body hdPanelBody" id="infoPanelBody">
+                    <div class="contentWrapper wholeHeight">
+                        <div id="toolbar" class="toolbar"></div>
+                        <table id="reportLoadTable" class="table" data-toolbar="#toolbar"></table>
+                        <!--<div id="reportWrapper">-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" th:src="@{/js/vue/components/menuBar.js}"></script>
+<script type="text/javascript" th:src="@{/js/js/MeasurementPoint/opReportDownload.js}"></script>
+
+</body>
+</html>

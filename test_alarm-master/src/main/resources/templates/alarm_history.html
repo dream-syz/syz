@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test报警信息</title>
+
+    <link rel="stylesheet" th:href="@{/css/bootstrap/css/bootstrap.css}"/>
+    <link rel="stylesheet" th:href="@{/css/intro/introjs.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap-table/bootstrap-table.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap-select/bootstrap-select.css}"/>
+    <link rel="stylesheet" th:href="@{/css/datetimepicker/daterangepicker.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap-treeview/bootstrap-treeview.css}"/>
+    <link rel="stylesheet" th:href="@{/css/jquery/jquery.mCustomScrollbar.css}"/>
+    <link rel="stylesheet" th:href="@{/css/dist-picker/city-picker.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap-table-fixed-columns-master/bootstrap-table-fixed-columns.css}"/>
+    <link rel="stylesheet" th:href="@{/css/css/MeasurementPoint/table-meter-query.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap-popover/bootstrap-popover-x.css}"/>
+
+    <!--<script type="text/javascript" th:src="@{/js/js/common/systemCommonCss.js}"></script>-->
+    <script type="text/javascript" th:src="@{/js/jquery/jquery-3.3.1.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery/jquery.mCustomScrollbar.concat.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap/bootstrap.js}"></script>
+    <script type="text/javascript" th:src="@{/js/intro/intro.min.js}"></script>}
+    <script type="text/javascript" th:src="@{/js/bootstrap-treeview/bootstrap-treeview(2).js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-table/bootstrap-table.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-table/bootstrap-table-zh-CN.js}"></script>
+    <script type="text/javascript" th:src="@{/js/dist-picker/city-picker.data.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-select/bootstrap-select.js}"></script>
+    <script type="text/javascript" th:src="@{/js/dist-picker/city-picker.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-select/defaults-zh_CN.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/datetimepicker/moment.js}"></script>
+    <script type="text/javascript" th:src="@{/js/datetimepicker/daterangepicker.js}"></script>
+    <script type="text/javascript" th:src="@{/js/ContextJS/context.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-Export/bootstrap-table-export.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap-Export/tableExport.js}"></script>
+    <script type="text/javascript" th:src="@{/js/js/MeasurementPoint/request-expired.js}"></script>
+    <script type="text/javascript" th:src="@{/js/js/common/hdstTable2.js}"></script>
+    <!------------------------------------------------------------------------->
+    <script type="text/javascript" th:src="@{/js/js/MeasurementPoint/hdst.treeview-query.js}"></script>
+    <script type="text/javascript" th:src="@{/js/js/MeasurementPoint/hdst.table-query.js}"></script>
+    <script type="text/javascript" th:src="@{/js/js/MeasurementPoint/tree_mp.js}"></script>
+    <script type="text/javascript" th:src="@{/js/js/MeasurementPoint/alarm_history.js}"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- 报警信息 -->
+            <div class="col-lg-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">报警信息</div>
+                    <div class="panel-body">
+                        <form id="formSearch_alarm" class="form-horizontal">
+                            <div class="form-group">
+                                <label class="control-label col-sm-1" for="fault_name">策略名称</label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control" id="fault_name"
+                                        placeholder="请输入策略名(精准查询)" />
+                                </div>
+                                <div class="col-sm-1" style="text-align:left;">
+                                    <button type="button" id="btn_alarm_query" class="btn btn-primary"
+                                        onclick="queryAlarmInfo()">查询</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <table id="tb_alarm_info" class="text-nowrap"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-frame-tip"></div>
+</body>
+
+</html>

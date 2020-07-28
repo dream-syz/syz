@@ -1,0 +1,222 @@
+
+#loadingDiv {
+    display: none;
+    position: relative;
+    margin-top: 10px;
+}
+
+#loadingDiv img {
+    margin: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.loading-block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.modal .modal-body {
+    max-height: 610px;
+    overflow-y: scroll;
+}
+
+.editTable tbody tr:nth-child(even) {
+    background-color: #EEEEEE;
+}
+
+.panelWrapper {
+    padding-right: 15px;
+}
+
+/*
+    大于1680的情况,col-lg需要调整的部分
+ */
+@media screen and (min-width: 1680px) {
+    * {
+        /*color: #c12e2a;*/
+    }
+
+    .list-group-item {
+        padding: 10px 12px;
+    }
+
+    .col-md-offset-1 {
+        margin-left: 0%;
+    }
+
+    #queryConditions {
+        margin-left: 14px;
+    }
+}
+
+/*
+    1400 <= x <= 1679
+ */
+@media screen and (min-width: 1400px)and (max-width: 1679px) {
+    * {
+        font-size: 13px;
+        /*color: red;*/
+    }
+
+    .list-group-item {
+        padding: 10px 10px;
+    }
+
+    .col-lg-1 {
+        width: 10%;
+    }
+
+    .col-lg-2 {
+        width: 18.8%;
+    }
+
+    .col-lg-10 {
+        width: 81.2%;
+    }
+
+    .col-md-offset-1 {
+        margin-left: 0%;
+    }
+
+    #checkbox label {
+        width: 80px;
+    }
+
+    #queryConditions {
+        margin-left: 24px;
+    }
+
+}
+
+/*
+    1200 <= x <= 1399
+ */
+@media screen and (min-width: 1200px)and (max-width: 1399px) {
+    * {
+        font-size: 10px;
+        /*color: #b04264;*/
+    }
+
+    #checkbox ins {
+        font-size: 6px;
+    }
+
+    .col-lg-1 {
+        width: 10.5%;
+    }
+
+    .col-lg-2 {
+        width: 21%;
+    }
+
+    .col-lg-5 {
+        width: 43%;
+    }
+
+    .col-lg-10 {
+        width: 79%;
+    }
+
+    .col-md-offset-1 {
+        margin-left: 3%;
+    }
+
+    .list-group-item {
+        padding: 10px 8px;
+    }
+
+    .icheckbox_square-blue {
+        background-image: url(/images/blue.png);
+        background-size: 160px 16px;
+    }
+
+    .icheckbox_square-blue.hover {
+        background-position: -16px 0;
+    }
+
+    .icheckbox_square-blue, .iradio_square-blue {
+        width: 16px;
+        height: 16px;
+    }
+
+    .icheckbox_square-blue.checked {
+        background-position: -32px 0;
+    }
+
+    #checkbox label {
+        width: 70px;
+        height: 30px;
+    }
+
+    #queryConditions {
+        margin-left: 14px;
+    }
+
+}
+
+/*
+    x <= 1199
+ */
+@media screen and (max-width: 1199px) {
+    * {
+        font-size: 10px !important;
+        /*color: #1e7e34;*/
+}
+
+    .list-group-item {
+        padding: 10px 9px;
+    }
+
+    .form-group {
+        margin: 0;
+    }
+
+    .col-md-offset-1 {
+        margin-left: 6%;
+    }
+
+    .timeSelect {
+        margin-top: 116px;
+    }
+
+    .list-group-item {
+        padding: 10px 8px;
+    }
+
+    .icheckbox_square-blue {
+        background-image: url(/images/blue.png);
+        background-size: 160px 16px;
+    }
+
+    .icheckbox_square-blue.hover {
+        background-position: -16px 0;
+    }
+
+    .icheckbox_square-blue, .iradio_square-blue {
+        width: 16px;
+        height: 16px;
+    }
+
+    .icheckbox_square-blue.checked {
+        background-position: -32px 0;
+    }
+
+    .button-toggle {
+        margin: 10px 0px;
+    }
+
+    #btn_query {
+        margin-left: 104px;
+        margin-top: 1px;
+    }
+}

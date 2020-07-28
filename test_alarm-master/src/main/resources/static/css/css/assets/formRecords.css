@@ -1,0 +1,249 @@
+#operating button, #query button {
+    margin-left: 20px;
+    font-size: 12px;
+    height: 30px;
+    width: 80px;
+}
+
+#formSearch {
+    padding-left: 16px;
+}
+
+#formSearch label {
+    padding-top: 8px;
+}
+
+#formSearch > div {
+    margin-left: 2%;
+}
+
+#formSearch > div, #formSearch > div > input {
+    display: inline-block;
+}
+
+#btn_recording {
+    width: 120px !important;
+}
+
+.editTable th {
+    text-align: center;
+}
+
+.editTable {
+    width: 90%;
+    margin: 50px auto 20px;
+    border-collapse: collapse;
+    border: 1px #aaa solid;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.editTable thead tr {
+    background: #D5D5D5;
+}
+
+.editTable tr {
+    border: 1px #aaa solid;
+}
+
+.editTable .header-panel > th > input {
+    display: none;
+}
+
+.editTable tr input {
+    background: none;
+    border: none;
+}
+
+.editTable tr td input {
+}
+
+.editTable tr th, .editTable tr td {
+    border: 1px #aaa solid;
+    height: 40px;
+    min-width: 50px;
+    /*使表格列宽度相等*/
+}
+
+.editTable tr .del-col {
+}
+
+.editTable tr a {
+    color: #000000;
+}
+
+.editTable .append-row {
+    background: #D5D5D5 !important;
+}
+
+.editTable .append-row td {
+    padding-right: 2.7%;
+}
+
+/*
+.editTable tbody tr:nth-child(odd) td,
+.editTable tbody tr:nth-child(odd) th {
+	background-color: #ECE9D8;
+}*/
+#addBtn {
+    background: #5a98de;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.modal-label-control {
+    height: 34px;
+    line-height: 34px;
+    margin-left: 12px;
+    color: #666;
+    font-weight: 700;
+    text-align: right;
+}
+
+.form-control {
+    text-align: center;
+}
+
+#layui-laydate1 table {
+    visibility: hidden;
+}
+
+#operating .btn-group ul {
+    margin-left: 30px;
+}
+
+#outgoingInfoModal .newAddTr input {
+    color: #1f8cec;
+}
+
+.reportOperate {
+    margin: 14px 0px;
+    height: 42px;
+}
+
+.fileInput {
+    display: none;
+}
+
+.formQuery {
+    width: 22%;
+}
+
+.formQueryLabel {
+    width: 23%;
+}
+
+.formQueryInput {
+    width: 70%;
+}
+
+.principalQuery {
+    width: 17%;
+}
+
+.principalLabel {
+    width: 32%;
+}
+
+.principalInput {
+    width: 50%;
+}
+
+.formTypeQuery {
+    width: 16%;
+}
+
+.formTypeQueryLabel {
+    width: 44%;
+}
+
+.formTypeQuerySelect {
+    width: 40%;
+    display: inline-block;
+}
+
+.out-in-time {
+    width: 24%;
+}
+
+.out-in-time-Label {
+    width: 35%;
+}
+
+.out-in-time-Input {
+    width: 63%;
+}
+
+.queryButton {
+    width: 9%;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1680px) {
+    .reportOperate .btn-group {
+        width: 31%;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+    .reportOperate .btn-group {
+        width: 35%;
+    }
+
+    .operateBtn .col-md-1 {
+        width: 12%;
+    }
+
+    .formQueryLabel {
+        width: 40%;
+    }
+
+    .formQueryInput {
+        width: 100%;
+    }
+
+    .principalQuery {
+        width: 12%;
+    }
+
+    .principalLabel {
+        width: 100%;
+    }
+
+    .principalInput {
+        width: 100%;
+    }
+
+    .formTypeQuery {
+        width: 12%;
+    }
+
+    .formTypeQueryLabel {
+        width: 100%;
+    }
+
+    .formTypeQuerySelect {
+        width: 100%;
+    }
+
+    .out-in-time {
+        width: 20%;
+    }
+
+    .out-in-time-Label {
+        width: 100%;
+    }
+
+    .out-in-time-Input {
+        width: 100%;
+    }
+}

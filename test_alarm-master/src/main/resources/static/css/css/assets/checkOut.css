@@ -1,0 +1,188 @@
+#operating button {
+    font-size: 12px;
+    height: 34px;
+    width: 96px;
+    line-height: 20px;
+}
+
+.queryContent div {
+    display: inline-block;
+}
+
+#operate-check button {
+    margin: 0 20px;
+}
+
+.label-control {
+    height: 36px;
+    line-height: 36px;
+}
+
+#select-time {
+    text-align: center;
+}
+
+#operate-check {
+    margin: 2px 0 30px 9px;
+}
+
+#formSearch {
+    margin-bottom: -15px;
+}
+
+.editTable th {
+    text-align: center;
+}
+
+.editTable {
+    width: 90%;
+    margin: 50px auto 20px;
+    border-collapse: collapse;
+    border: 1px #aaa solid;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.editTable thead tr {
+    background: #D5D5D5;
+}
+
+.editTable tr {
+    border: 1px #aaa solid;
+}
+
+.editTable tr input {
+    background: none;
+    border: none;
+    text-align: center;
+}
+
+.editTable tr td input {
+}
+
+.editTable tr th, .editTable tr td {
+    border: 1px #aaa solid;
+    height: 40px;
+    /*使表格列宽度相等*/
+}
+
+.editTable tr .del-col {
+}
+
+.editTable tr a {
+    color: #000000;
+}
+
+.editTable .append-row {
+    background: #D5D5D5 !important;
+}
+
+.editTable .append-row td {
+    padding-right: 2.7%;
+}
+
+#operating .btn-group ul {
+    margin-left: 20px;
+}
+
+#formSearch .form-group {
+    margin-top: 10px;
+}
+
+#formSearch iframe {
+    display: none;
+}
+
+#formSearch span {
+    vertical-align: middle;
+}
+
+#inventoryModal .editTable .diff, #inventoryDetailModal .modal-footer, #inventoryModal .editTable .header-panel > th > input, #diff {
+    display: none;
+}
+
+.formIdWrapper {
+    width: 29%;
+}
+
+.formIdLabel {
+    width: 32%;
+}
+
+.formIdInput {
+    width: 65%;
+}
+
+.assetsNameWrapper {
+    width: 19%;
+}
+
+.assetsNameLabel {
+    width: 48%;
+}
+
+.assetsNameInput {
+    width: 48%;
+}
+
+.inventoryTypeWrapper {
+    width: 19%;
+}
+
+.inventoryTypeLabel {
+    width: 48%;
+}
+
+.inventoryTypeInput {
+    width: 48%;
+}
+
+.select-timeWrapper {
+    width: 29%;
+}
+
+.select-timeLabel {
+    width: 31%;
+}
+
+.select-timeInput {
+    width: 64%;
+}
+
+@media screen and (max-width: 1679px) {
+    #query {
+        margin-top: 41px;
+        margin-left: -44px;
+    }
+
+    .col-lg-1 {
+        width: 8.33333333%;
+    }
+
+    .formIdLabel, .formIdInput, .assetsNameLabel, .assetsNameInput, .inventoryTypeLabel, .inventoryTypeInput, .select-timeLabel, .select-timeInput {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .col-md-11 {
+        width: 86.666667%;
+    }
+    .formIdWrapper {
+        width: 27%;
+    }
+    .assetsNameWrapper {
+        width: 17%;
+    }
+    .inventoryTypeWrapper {
+        width: 17%;
+    }
+    .select-timeWrapper {
+        width: 27%;
+    }
+    #btn_query {
+        margin-left: 0;
+        margin-top: 1px;
+    }
+}
+

@@ -1,0 +1,56 @@
+#treeview {
+    padding-right: 8px
+}
+
+#treebody {
+    padding-right: 5px;
+    overflow: hidden;
+}
+
+#main {
+    width: 100%;
+    height: 272px;
+}
+
+#treeview li {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.navbar-default {
+    color: #2e6da4;
+}
+
+#baseMpInfo {
+    padding-right: 8px
+}
+
+#baseDataItem {
+    padding-right: 8px
+}
+
+.mCSB_scrollTools {
+    right: -10px;
+}
+
+@media screen and (max-width: 1000px) {
+    * {
+        color: red;
+    }
+
+    #treepanel, #runTimePanel, #treebody, #tb_departments {
+        height: 540px !important;
+    }
+
+    #MpInfobody, #DataItembody {
+        height: 500px !important;
+    }
+
+    #cloud-name {
+        margin-left: 16px;
+    }
+    #topMenu .dropdown{
+        margin-left: 12px;
+    }
+}

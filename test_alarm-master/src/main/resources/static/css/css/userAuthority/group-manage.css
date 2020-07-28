@@ -1,0 +1,44 @@
+.col-md-3 {
+    width: 27%;
+}
+
+.col-md-8 {
+    width: 71%;
+}
+
+#treeWrapper, #systemTreeForAssign, #systemTreeForData {
+    overflow: auto;
+}
+
+#authorityAssign {
+    margin-left: 20px;
+}
+
+#postTreePanel, #authorityAssign {
+    padding: 0;
+}
+
+#authorityAssignBody #codeTable {
+    vertical-align: top;
+    width: 67%;
+}
+
+#authorityAssignBody #tab1 .treeWrapper {
+    width: 32%;
+}
+
+#authorityAssignBody #systemTreeForData {
+    width: 40%;
+}
+
+#saveData, #saveResources {
+    position: absolute;
+    right: 20px;
+    bottom: 14px;
+}
+
+/*#postType li {*/
+    /*margin-bottom: 0;*/
+/*}*/
+
+

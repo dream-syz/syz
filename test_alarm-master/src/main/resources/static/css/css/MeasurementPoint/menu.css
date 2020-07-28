@@ -1,0 +1,42 @@
+.sidebar{
+    padding-right: 5px;
+    display: block;
+}
+
+#searchTypeAndVersion{
+    padding-right: 18px;
+}
+
+#attrs li {
+    float: left;
+    padding: 5px 5px;
+}
+
+.attrs1:hover, .attrs1 label:hover, .attrs2:hover, .attrs2 label:hover, .attrs3:hover, .attrs3 label:hover {
+    background-color: #39B3D7;
+    color: #f7f7f7;
+    cursor: pointer;
+}
+
+.content1 .col-md-4 {
+    padding: 5px 20px;
+}
+
+
+#attrs li div {
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    padding: 6px 22px;
+    margin: 0px 5px 3px 3px;
+    line-height: 150%;
+    background-color: #f7f7f7;
+    font-size: 14px;
+    cursor: pointer;
+    width: 106px;
+    text-align: center;
+}
+
+#attrs li div:hover, #attrs1 div:hover {
+    background-color: #39B3D7;
+    color: #f7f7f7;
+}

@@ -1,0 +1,65 @@
+
+.dataDictionary .treePanel {
+    width:25%;
+    vertical-align: top;
+}
+
+.dataDictionary #dataValue {
+    width:70%;
+}
+
+#departmentTree-userManage {
+    width: 40%;
+    display: inline-block;
+    margin-top: 7%;
+    vertical-align: top;
+}
+
+#contentWrapper {
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 48%;
+    display: inline-block;
+}
+
+.userAuthority .treePanel {
+    display: inline-block;
+    width: 27%;
+    margin-left:1%;
+}
+
+.userAuthority .treePanel > div {
+    margin-top: 26px;
+}
+
+.userAuthority .panel {
+    vertical-align: top;
+    display: inline-block;
+    width: 69.5%;
+    margin-left:2%;
+    margin-top:86px;
+}
+
+/*#authorityManageBody .bootstrap-table {*/
+/*vertical-align: top;*/
+/*display: inline-block;*/
+/*width:78%;*/
+/*}*/
+
+
+#info-body .userCenter {
+    display: inline;
+}
+
+.cardWrapper .text-part {
+    display: inline-block;
+}
+
+.firstLine div, .secondLine div {
+    margin: 40px auto;
+}
+
+.secondLine .graph {
+    display: inline-block;
+}
+

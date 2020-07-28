@@ -1,0 +1,30 @@
+#treeview1,#treeview2,label{
+    font-size: 16px;
+}
+
+.treeview{
+    padding-right: 18px
+}
+
+#tree2 .panel-body{
+    padding-right: 0px;height: 93%;overflow: hidden;
+}
+
+#myTags{
+    padding-right: 30px;
+}
+
+#attributes .panel-body{
+    padding-right: 2%;
+}
+
+#treeview2 li,#treeview1 li{
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+/*#content{*/
+    /*min-width: 1300px;*/
+/*}*/
+

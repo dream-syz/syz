@@ -1,0 +1,32 @@
+#treeview{
+    padding-right: 8px
+}
+
+#treebody{
+    padding-right: 5px;overflow: hidden;
+}
+
+
+#Metertreeview{
+    padding-right: 8px
+}
+
+#Meterbody{
+    padding-right: 5px;overflow: hidden;
+}
+
+#treeview li{
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+#Metertreeview li{
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 110px;
+}
+

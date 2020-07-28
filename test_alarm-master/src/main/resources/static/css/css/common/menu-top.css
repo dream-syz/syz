@@ -1,0 +1,156 @@
+* {
+    color: #fff !important;
+}
+
+#map-panel *, #mapPanel * {
+    color: black !important;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #1873ba
+}
+
+body {
+    background-color: #1873ba !important;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 10px;
+}
+
+#headMenu {
+    margin-top: 8px;
+}
+
+#navbar, #buttom {
+    background-color: rgb(13, 88, 156);
+}
+
+#buttom {
+    margin-bottom: 0px;
+    margin-top: -14px;
+}
+
+.glyphicon {
+    top: 3px;
+}
+
+nav.navbar, div.panel {
+    background-color: rgb(12, 56, 121);
+    border-radius: 10px;
+}
+
+nav.navbar.navbar-default, #mapPanel {
+    border-radius: 0px;
+}
+
+.navbar-right {
+    margin-right: 0px;
+}
+
+nav.navbar {
+    border: none;
+    margin-top: -8px;
+}
+
+#nav {
+    background-color: #0d589c;
+    border: 0px;
+}
+
+#treepanel {
+    background-color: rgb(15, 46, 103);
+}
+
+span.cut {
+    color: #0e66b7;
+    padding-top: 16px;
+    margin-right: 22px;
+    display: inline-block;
+}
+
+a.navbar-brand {
+    font-weight: bold;
+}
+
+p#system-name, p#sy_time, p#cloud-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.btn {
+    background-color: rgb(24, 115, 186);
+}
+
+.col-lg-2, .col-lg-8, .col-md-4, .col-md-8 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.container-fluid {
+    /*padding-top: 8px;*/
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.navbar {
+    margin-bottom: 12px;
+}
+
+.navbar-text {
+    margin-left: 24px;
+}
+
+#topMenu > li.dropdown, #userMenu > li.dropdown {
+    /*margin-top: 8px !important;*/
+    margin-right: 26px !important;
+}
+
+.navbar-nav > li > a {
+    padding-top: 18px;
+    line-height: 24px;
+}
+
+a.navbar > glyphicon {
+    top: 2px;
+}
+
+i.glyphicon.glyphicon-off {
+    margin-right: 10px;
+}
+
+.navbar-right ~ .navbar-right {
+    margin-right: 24px;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-color: rgb(8, 35, 84);
+}
+
+.dropdown-menu {
+    background-color: #0d589c;
+}
+
+.panel .panel-body .treeview .list-group .list-group-item {
+    background-color: rgb(13, 88, 156);
+    border: none;
+}
+
+.container-fluid {
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.btn-default, .btn-default:hover, .btn-default:active:hover, .btn-default.active:hover, .open > .dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open > .dropdown-toggle.btn-default:focus, .btn-default:active.focus, .btn-default.active.focus, .open > .dropdown-toggle.btn-default.focus {
+    background-color: rgb(24, 115, 186);
+    border-color: #0d589c;
+}
+
+.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    background-color: rgb(24, 115, 186);
+    border-color: #0d589c;
+}
+

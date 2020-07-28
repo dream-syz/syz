@@ -1,0 +1,31 @@
+.col-md-3 {
+    width: 27%;
+}
+
+.col-md-8 {
+    width:71%;
+}
+
+#authorityAssign {
+    margin-left: 1%;
+}
+
+#authorityAssignBody #tab1 .treePanel {
+    width:24%;
+}
+
+#authorityAssignBody #tab2 .treePanel {
+    width:35%;
+}
+
+#authorityAssign .tableWrapper {
+    vertical-align: top;
+    width:74%;
+    margin-left:12px;
+}
+
+#authorityAssignBody .tab-pane .saveBtn {
+    position: absolute;
+    right: 20px;
+    bottom: 14px;
+}
